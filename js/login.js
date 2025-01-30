@@ -1,13 +1,14 @@
-// Obtener elementos
-const userMenuButton = document.getElementById("user-menu-button");
-const userMenu = document.getElementById("user-menu");
+function togglePasswordVisibility() {
+  const passwordInput = document.getElementById("password");
+  const eyeIcon = document.getElementById("eye-icon");
 
-// Añadir evento de clic al botón (imagen)
-userMenuButton.addEventListener("click", function () {
-  // Alternar la visibilidad del menú
-  if (userMenu.style.display === "none" || userMenu.style.display === "") {
-    userMenu.style.display = "block"; // Mostrar menú
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    eyeIcon.classList.remove("fa-eye");
+    eyeIcon.classList.add("fa-eye-slash");
   } else {
-    userMenu.style.display = "none"; // Ocultar menú
+    passwordInput.type = "password";
+    eyeIcon.classList.remove("fa-eye-slash");
+    eyeIcon.classList.add("fa-eye");
   }
-});
+}

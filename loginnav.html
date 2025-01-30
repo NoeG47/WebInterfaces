@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <script defer src="./js/login.js"></script>
+    <link rel="icon" href="./img/logo(1).ico" type="image/gif" sizes="16x16" />
+    <title>Login</title>
+  </head>
+  <body>
+    <!--OJITO-->
+    <div class="max-w-sm">
+      <label class="block text-sm mb-2 dark:text-white">Password</label>
+      <div class="relative">
+        <input id="hs-toggle-password" type="password" class="py-3 ps-4 pe-10 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="Enter password" value="12345qwerty">
+        <button type="button" data-hs-toggle-password='{
+            "target": "#hs-toggle-password"
+          }' class="absolute inset-y-0 end-0 flex items-center z-20 px-3 cursor-pointer text-gray-400 rounded-e-md focus:outline-none focus:text-blue-600 dark:text-neutral-600 dark:focus:text-blue-500">
+          <svg class="shrink-0 size-3.5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path class="hs-password-active:hidden" d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path>
+            <path class="hs-password-active:hidden" d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"></path>
+            <path class="hs-password-active:hidden" d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"></path>
+            <line class="hs-password-active:hidden" x1="2" x2="22" y1="2" y2="22"></line>
+            <path class="hidden hs-password-active:block" d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+            <circle class="hidden hs-password-active:block" cx="12" cy="12" r="3"></circle>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!--Navbar-->
+    <nav class="bg-gray-800">
+      <div class="px-2 sm:px-6">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button
+              type="button"
+              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <!--
+                Icon when menu is closed.
+    
+                Menu open: "hidden", Menu closed: "block"
+              -->
+              <svg
+                class="block size-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+              <!--
+                Icon when menu is open.
+    
+                Menu open: "block", Menu closed: "hidden"
+              -->
+              <svg
+                class="hidden size-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+          >
+            <div class="flex shrink-0 items-center">
+              <img
+                class="h-10 w-auto"
+                src="./img/logo.png"
+                alt="logoIesYoutubers"
+              />
+            </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a
+                  href="#"
+                  class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                  aria-current="page"
+                  >Área personal</a
+                >
+
+                <a
+                  href="#"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >Mis cursos</a
+                >
+                <a
+                  href="#"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >Calendario</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+          >
+            <button
+              type="button"
+              class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+            >
+              <span class="absolute -inset-1.5"></span>
+              <span class="sr-only">Ver notificaciones</span>
+              <svg
+                class="size-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
+                />
+              </svg>
+            </button>
+
+            <!-- Profile dropdown -->
+            <div class="relative ml-3">
+              <div>
+                <button
+                  type="button"
+                  class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                  id="user-menu-button"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                >
+                  <span class="absolute -inset-1.5"></span>
+                  <span class="sr-only">Abrir menu de usuario</span>
+                  <img class="h-8" src="/img/user.png" alt="" />
+                </button>
+              </div>
+
+              <!--
+                Dropdown menu, show/hide based on menu state.
+    
+                Entering: "transition ease-out duration-100"
+                  From: "transform opacity-0 scale-95"
+                  To: "transform opacity-100 scale-100"
+                Leaving: "transition ease-in duration-75"
+                  From: "transform opacity-100 scale-100"
+                  To: "transform opacity-0 scale-95"
+              -->
+              <div
+                class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 focus:outline-none"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="user-menu-button"
+                tabindex="-1"
+              >
+                <!-- Active: "bg-gray-100 outline-none", Not Active: "" -->
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-gray-700"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="user-menu-item-0"
+                  >Tu perfil</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-gray-700"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="user-menu-item-1"
+                  >Ajustes</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-gray-700"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="user-menu-item-2"
+                  >Cerrar sesión</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a
+            href="#"
+            class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+            aria-current="page"
+            >Dashboard</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Team</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Projects</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Calendar</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!--INICIAR SESIÓN-->
+    <!---->
+    <div
+      class="flex min-h-screen min-h-full flex-col items-center justify-center px-6"
+    >
+      <div class="w-full max-w-sm bg-white p-8 shadow-md rounded-lg">
+        <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+          <img
+            class="mx-auto h-10 w-auto"
+            src="data:image/png;base64,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"
+            alt="Your Company"
+          />
+          <h2
+            class="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900"
+          >
+            Bienvenidos IES Youtubers
+          </h2>
+        </div>
+
+        <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+          <form class="space-y-6" action="#" method="POST">
+            <div>
+              <label
+                for="email"
+                class="block text-sm/6 font-medium text-gray-900"
+                >Correo Electronico</label
+              >
+              <div class="mt-2">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  autocomplete="email"
+                  required
+                  class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                />
+              </div>
+            </div>
+
+            <div>
+              <div class="flex items-center justify-between">
+                <label
+                  for="password"
+                  class="block text-sm/6 font-medium text-gray-900"
+                  >Contraseña</label
+                >
+                <div class="text-sm">
+                  <a
+                    href="#"
+                    class="font-semibold text-indigo-600 hover:text-indigo-500"
+                    >¿Olvidaste tu contraseña?</a
+                  >
+                </div>
+              </div>
+              <div class="mt-2">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  autocomplete="current-password"
+                  required
+                  class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                />
+              </div>
+            </div>
+
+            <div>
+              <button
+                type="submit"
+                class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Acceder
+              </button>
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Invitado
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--FIN INIC-->
+  </body>
+</html>
