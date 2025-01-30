@@ -608,6 +608,9 @@
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
+  .-left-2 {
+    left: calc(var(--spacing) * -2);
+  }
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
@@ -1118,6 +1121,10 @@
   .translate-full {
     --tw-translate-x: 100%;
     --tw-translate-y: 100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-x-full {
+    --tw-translate-x: -100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-z-px {

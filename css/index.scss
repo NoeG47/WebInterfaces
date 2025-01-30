@@ -1,4 +1,5 @@
-@import "_calendario.scss";
+@import "calendario"; // Partial para estilos de botones
+@import "colors";
 .bg-foto {
   background-image: url("../img/fondo.jpg");
   background-attachment: fixed;
@@ -6,11 +7,9 @@
   background-size: cover;
   background-position: center;
 }
+// Genera las variables CSS desde el mapa de colores
 :root {
-  --color-dark: #222831;
-  --color-dark-gray: #393E46;
-  --color-teal: #00ADB5;
-  --color-light-gray: #EEEEEE;
-  --color-light: #D9D9D9;
-  --color-white: #FFFFFF;
+  @each $name, $color in $colors {
+    --color-#{$name}: #{$color};
+  }
 }
