@@ -2,6 +2,14 @@
   background-color: var(--color-light-gray);
 }
 
+.bg-section {
+  background-color: var(--color-light);
+}
+
+.bg-fondo {
+  background-color: var(--color-white);
+}
+
 .bg-foto {
   background-image: url("../img/fondo.jpg");
   background-attachment: fixed;
