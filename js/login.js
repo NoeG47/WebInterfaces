@@ -11,6 +11,7 @@ userMenuButton.addEventListener("click", function () {
     userMenu.style.display = "none"; // Ocultar menú
   }
 });
+
 document.getElementById("menu-toggle").addEventListener("click", function () {
   const menu = document.getElementById("mobile-menu");
   const openIcon = document.querySelector(".menu-icon-open");

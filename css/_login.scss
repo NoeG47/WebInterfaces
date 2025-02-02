@@ -1,0 +1,10 @@
+.bg-dark {
+  background-color: var(--color-dark);
+}
+.bg-teal {
+  transition: background-color 0.3s ease; // Suaviza el cambio de color
+
+  &:hover {
+    background-color: var(--color-teal);
+  }
+}

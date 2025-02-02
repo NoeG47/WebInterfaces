@@ -1,5 +1,22 @@
-.bg-color {
-  background-color: var(--color-light-gray);
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+:root {
+  --color-dark: #222831;
+  --color-dark-gray: #393e46;
+  --color-teal: #00adb5;
+  --color-light-gray: #eeeeee;
+  --color-light: #d9d9d9;
+  --color-white: #ffffff;
+}
+
+.bg-dark {
+  background-color: var(--color-dark);
+}
+
+.bg-teal {
+  transition: background-color 0.3s ease;
+}
+.bg-teal:hover {
+  background-color: var(--color-teal);
 }
 
 .bg-section {
@@ -10,6 +27,10 @@
   background-color: var(--color-white);
 }
 
+.bg-color {
+  background-color: var(--color-light-gray);
+}
+
 .bg-foto {
   background-image: url("../img/fondo.jpg");
   background-attachment: fixed;
@@ -18,13 +39,8 @@
   background-position: center;
 }
 
-:root {
-  --color-dark: #222831;
-  --color-dark-gray: #393e46;
-  --color-teal: #00adb5;
-  --color-light-gray: #eeeeee;
-  --color-light: #d9d9d9;
-  --color-white: #ffffff;
+h1 {
+  font-family: "Madimi One", serif;
 }
 
 /*# sourceMappingURL=index.css.map */
