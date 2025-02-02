@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/732cf83991.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/login.js"></script>
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <nav class="bg-dark sticky top-0">
+      <div class="w-full px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button
+              type="button"
+              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+              id="menu-toggle"
+            >
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Abrir menú principal</span>
+
+              <!-- Icono cuando el menú está cerrado -->
+              <svg
+                class="hidden size-6 menu-icon-open"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+
+              <!-- Icono cuando el menú está abierto -->
+              <svg
+                class="block size-6 menu-icon-close"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex flex-1 h-full items-center justify-center sm:items-stretch sm:justify-start"
+          >
+            <div class="flex shrink-0 items-center">
+              <img
+                class="h-10 w-auto"
+                src="./img/logo.png"
+                alt="logoiesyoutubers"
+              />
+            </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex h-full items-center space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="text-sm text-white" aria-current="page">
+                  <h1
+                    href="#"
+                    class="text-base sm:text-2xl text-white flex flex-1"
+                    aria-current="page"
+                  >
+                    IES Youtubers
+                  </h1></a
+                >
+                <div class="flex justify-center items-center ml-4">
+                  <a
+                    href="#"
+                    class="rounded-md px-3 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                    >Área personal</a
+                  >
+                  <a
+                    href="#"
+                    class="rounded-md px-3 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                    >Mis cursos</a
+                  >
+                  <a
+                    href="#"
+                    class="rounded-md px-3 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                    >Calendario</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+          >
+            <button
+              type="button"
+              class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
+            >
+              <span class="absolute -inset-1.5"></span>
+              <span class="sr-only">Ver notificaciones</span>
+              <svg
+                class="size-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
+                />
+              </svg>
+            </button>
+
+            <!-- Profile dropdown -->
+            <div class="relative ml-3">
+              <div>
+                <button
+                  type="button"
+                  class="relative flex rounded-full bg-gray-800 text-sm focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
+                  id="user-menu-button"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                >
+                  <span class="absolute -inset-1.5"></span>
+                  <span class="sr-only">Abrir menu de usuario</span>
+                  <img class="h-8 rounded-full" src="./img/user.png" alt="" />
+                </button>
+              </div>
+
+              <!--
+                Dropdown menu, show/hide based on menu state.
+    
+                Entering: "transition ease-out duration-100"
+                  From: "transform opacity-0 scale-95"
+                  To: "transform opacity-100 scale-100"
+                Leaving: "transition ease-in duration-75"
+                  From: "transform opacity-100 scale-100"
+                  To: "transform opacity-0 scale-95"
+              -->
+              <div
+                class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 ring-1 shadow-lg ring-black/5 focus:outline-hidden"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="user-menu-button"
+                tabindex="-1"
+                id="user-menu"
+                style="display: none"
+              >
+                <!-- Active: "bg-gray-100 outline-hidden", Not Active: "" -->
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-gray-700"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="user-menu-item-0"
+                  >Tu perfil</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-gray-700"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="user-menu-item-1"
+                  >Ajustes</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-gray-700"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="user-menu-item-2"
+                  >Cerrar sesión</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pt-2 pb-3">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-white"
+            aria-current="page"
+            >Área personal</a
+          >
+
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Mis cursos</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Calendario</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!--End navbar-->
+
+    <!-- Contenedor principal -->
+    <div class="w-full max-w-screen mx-auto py-12 px-6 bg-section">
+      <!--texto-->
+      <section
+        class="pt-20 lg:pt-[120px] bg-section pb-10 rounded-lg shadow-lg"
+      >
+        <div class="ml-4">
+          <h1 class="text-xl font-bold dark:text-gray-100 text-gray-800 pb-3">
+            Introducción a la Animación de Elementos 2D y 3D
+          </h1>
+          <p>
+            La información 2D se limita a dos dimensiones: altura y anchura. Es
+            comúnmente usada para representaciones planas como dibujos, mapas,
+            planos arquitectónicos y gráficos. La información 3D añade una
+            tercera dimensión (profundidad) a las dos dimensiones tradicionales,
+            permitiendo la creación de modelos o representaciones más realistas.
+          </p>
+        </div>
+        <h2>Contenidos</h2>
+        <hr />
+      </section>
+      <div style="height: 40vh; border: 1px solid">
+        <h3>Tema1</h3>
+        <ul>
+          <li>Introduccion</li>
+          <li>PDF</li>
+          <li>Entrega</li>
+        </ul>
+      </div>
+      <div style="height: 40vh; border: 1px solid">
+        <h3>Tema2</h3>
+        <ul>
+          <li>Introduccion</li>
+          <li>PDF</li>
+          <li>Entrega</li>
+        </ul>
+      </div>
+      <!--End contenedor-->
+    </div>
+    <!--Footer-->
+    <footer class="bg-dark">
+      <div class="w-full px-2 py-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center justify-between sm:flex-row">
+          <p class="text-sm text-white dark:text-gray-300">
+            Plataforma Educativa -
+            <a href="https://ayuda.educa.madrid.org/shelves/aula-virtual"
+              >Ayuda</a
+            >
+          </p>
+          <div class="flex items-center m-0 mt-2 mb-2 sm:m-0">
+            <button
+              class="bg-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button"
+            >
+              <i class="fab fa-twitter"></i></button
+            ><button
+              class="bg-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </button>
+            <button
+              class="bg-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none"
+              type="button"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </button>
+          </div>
+
+          <div class="h-[45px] m-0 mt-2 mb-2 sm:m-0">
+            <img
+              class="h-full p-2 lg:w-auto"
+              src="/img/aulaVirtual.png"
+              alt="AulaVirtual"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--End footer-->
+  </body>
+</html>
