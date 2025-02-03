@@ -3,6 +3,7 @@
 @import "inicio";
 @import "calendario"; // Partial para estilos de botones
 @import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+@import "formulario";
 .bg-foto {
   background-image: url("../img/fondo.jpg");
   background-attachment: fixed;
@@ -12,4 +13,6 @@
 }
 h1 {
   font-family: "Madimi One", serif;
+  font-weight: 400;
+  font-style: normal;
 }
