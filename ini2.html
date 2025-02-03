@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/output.css" />
     <link rel="stylesheet" href="./css/index.css" />
-    <title>Formulario</title>
+    <script
+      src="https://kit.fontawesome.com/732cf83991.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/login.js"></script>
+    <title>Inicio</title>
   </head>
   <body>
     <!--Navbar-->
@@ -216,185 +221,110 @@
       </div>
     </nav>
     <!--End navbar-->
-    <!--FORMULARIO-->
-
-    <form class="max-w-md mx-auto">
-        <h1 class="font-bold text-dark text-xl m:text-[27px] md:text-xl xl:text-[27px] xl:text-xl 2xl:text-[27px] mb-4 block hover:text-primary">
-            Formulario: 
-        </h1>
-      <div class="relative z-0 w-full mb-5 group">
-       
-        <input
-          type="email"
-          name="floating_email"
-          id="floating_email"
-          class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-          placeholder=" "
-          required
-        />
-        <label
-          for="floating_email"
-          class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >Correo Electrónico: </label
-        >
-      </div>
-      <div class="relative z-0 w-full mb-5 group">
-        <input
-          type="password"
-          name="floating_password"
-          id="floating_password"
-          class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-          placeholder=" "
-          required
-        />
-        <label
-          for="floating_password"
-          class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >Contraseña</label
-        >
-      </div>
-      <div class="relative z-0 w-full mb-5 group">
-        <input
-          type="password"
-          name="repeat_password"
-          id="floating_repeat_password"
-          class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-          placeholder=" "
-          required
-        />
-        <label
-          for="floating_repeat_password"
-          class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >Confirma tu contraseña</label
-        >
-      </div>
-      <div class="grid md:grid-cols-2 md:gap-6">
-        <div class="relative z-0 w-full mb-5 group">
-          <input
-            type="text"
-            name="floating_first_name"
-            id="floating_first_name"
-            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-            placeholder=" "
-            required
-          />
-          <label
-            for="floating_first_name"
-            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-            >Nombre: </label
-          >
-        </div>
-        <div class="relative z-0 w-full mb-5 group">
-          <input
-            type="text"
-            name="floating_last_name"
-            id="floating_last_name"
-            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-            placeholder=" "
-            required
-          />
-          <label
-            for="floating_last_name"
-            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-            >Apellido: </label
-          >
-        </div>
-      </div>
-      <div class="grid md:grid-cols-2 md:gap-6">
-        <div class="relative z-0 w-full mb-5 group">
-          <input
-            type="tel"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            name="floating_phone"
-            id="floating_phone"
-            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-            placeholder=" "
-            required
-          />
-          <label
-            for="floating_phone"
-            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-            >Teléfono (123-456-7890)</label
-          >
-        </div>
-        <div class="relative z-0 w-full mb-5 group">
-          <input
-            type="text"
-            name="floating_company"
-            id="floating_company"
-            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-            placeholder=" "
-            required
-          />
-          <label
-            for="floating_company"
-            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-            >Ciudad (Ex. Madrid)</label
-          >
-        </div>
-      </div>
-      <!--ACEPTAR CONDICIONES-->
-      <div>
-        <fieldset>
-          <legend class="sr-only">Acepta las condiciones</legend>
-
-          <div class="flex items-center mb-4">
-            <input
-              checked
-              id="checkbox-1"
-              type="checkbox"
-              value=""
-              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-            />
-            <label
-              for="checkbox-1"
-              class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >Estoy de acuerdo con los 
-              <a
-                href="#"
-                class="text-blue-600 hover:underline dark:text-blue-500"
-                >términos y condiciones</a
-              >.</label
-            >
+    <!--Inicio-->
+    <div class="bg-color py-12 px-6">
+      <h1 class="text-xl font-bold dark:text-gray-100 text-gray-800 ml-4 pt-4">
+        Mis cursos
+      </h1>
+      <h2 class="text-lg font-bold dark:text-gray-100 text-gray-800 ml-4 pb-4">
+        Vista general del curso
+      </h2>
+      <div class="w-full m-auto rounded-lg flex justify-center items-center">
+        <div class="container mx-auto">
+          <div class="flex flex-wrap justify-center">
+            <!-- Carta 1 -->
+            <div class="w-full md:w-1/2 xl:w-1/2 px-4">
+              <div class="rounded-lg overflow-hidden mb-10 bg-light">
+                <img
+                  src="./img/tarjeta1.png"
+                  alt="image"
+                  class="w-full h-48 object-cover"
+                />
+                <div
+                  class="p-8 sm:p-9 md:p-7 xl:p-9 text-center flex flex-col flex-grow"
+                >
+                  <h3>
+                    <a
+                      href=""
+                      class="font-bold text-dark block hover:text-primary sm:text-2xl"
+                    >
+                      Animación de Elementos 2D y 3D
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Carta 2 -->
+            <div class="w-full md:w-1/2 xl:w-1/2 px-4">
+              <div class="rounded-lg overflow-hidden mb-10 bg-light">
+                <img
+                  src="https://cdn.tailgrids.com/1.0/assets/images/cards/card-01/image-02.jpg"
+                  alt="image"
+                  class="w-full h-48 object-cover"
+                />
+                <div
+                  class="p-8 sm:p-9 md:p-7 xl:p-9 text-center flex flex-col flex-grow"
+                >
+                  <h3>
+                    <a
+                      href=""
+                      class="font-bold text-dark sm:text-2xl block hover:text-primary"
+                    >
+                      Diseño y Modelado para Animación
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Carta 3 -->
+            <div class="w-full md:w-1/2 xl:w-1/2 px-4">
+              <div class="rounded-lg overflow-hidden mb-10 bg-light">
+                <img
+                  src="https://cdn.tailgrids.com/1.0/assets/images/cards/card-01/image-03.jpg"
+                  alt="image"
+                  class="w-full h-48 object-cover"
+                />
+                <div
+                  class="p-8 sm:p-9 md:p-7 xl:p-9 text-center flex flex-col flex-grow"
+                >
+                  <h3>
+                    <a
+                      href=""
+                      class="font-bold text-dark sm:text-2xl block hover:text-primary"
+                    >
+                      Proyectos de Videojuegos y Entornos Interactivos
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Carta 4 -->
+            <div class="w-full md:w-1/2 xl:w-1/2 px-4">
+              <div class="rounded-lg overflow-hidden mb-10 bg-light">
+                <img
+                  src="https://cdn.tailgrids.com/1.0/assets/images/cards/card-01/image-03.jpg"
+                  alt="image"
+                  class="w-full h-48 object-cover"
+                />
+                <div
+                  class="p-8 sm:p-9 md:p-7 xl:p-9 text-center flex flex-col flex-grow"
+                >
+                  <h3>
+                    <a
+                      href=""
+                      class="font-bold text-dark sm:text-2xl block hover:text-primary"
+                    >
+                      Realización del Montaje y Postproducción de Audiovisuales
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div class="flex items-center mb-4">
-            <input
-              id="checkbox-2"
-              type="checkbox"
-              value=""
-              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-            />
-            <label
-              for="checkbox-2"
-              class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >I want to get promotional offers</label
-            >
-          </div>
-
-          <div class="flex items-center mb-4">
-            <input
-              id="checkbox-3"
-              type="checkbox"
-              value=""
-              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-            />
-            <label
-              for="checkbox-3"
-              class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >Soy mayor de edad</label
-            >
-          </div>
-          <button
-            type="submit"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Submit
-          </button>
-        </fieldset>
+        </div>
       </div>
-    </form>
-
+    </div>
+    <!--End inicio-->
     <!--Footer-->
     <footer class="bg-dark">
       <div class="w-full px-2 py-4 sm:px-6 lg:px-8">
@@ -435,5 +365,6 @@
         </div>
       </div>
     </footer>
+    <!--End footer-->
   </body>
 </html>

@@ -19,12 +19,8 @@
   background-color: var(--color-teal);
 }
 
-.bg-section {
+.bg-light {
   background-color: var(--color-light);
-}
-
-.bg-fondo {
-  background-color: var(--color-white);
 }
 
 .bg-color {
