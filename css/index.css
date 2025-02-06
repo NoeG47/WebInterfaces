@@ -23,6 +23,10 @@
   background-color: var(--color-light);
 }
 
+.color-calendar {
+  color: var(--color-dark);
+}
+
 .bg-color {
   background-color: var(--color-light-gray);
 }
