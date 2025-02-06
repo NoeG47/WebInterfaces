@@ -64,7 +64,7 @@
             </button>
           </div>
           <div
-            class="flex flex-1 h-full items-center justify-center sm:items-stretch sm:justify-start"
+            class="flex flex-1 h-full items-center ml-8 sm:ml-0 md:ml-0 lg:ml-0 sm:items-stretch sm:justify-start"
           >
             <div class="flex shrink-0 items-center">
               <img
@@ -76,10 +76,13 @@
             <div class="hidden sm:ml-6 sm:block">
               <div class="flex h-full items-center space-x-4">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="text-sm text-white" aria-current="page">
+                <a
+                  href="inicio.html"
+                  class="text-sm text-white"
+                  aria-current="page"
+                >
                   <h1
-                    href="#"
-                    class="text-base sm:text-2xl text-white flex flex-1"
+                    class="text-2xl/9 md:text-2xl lg:text-3xl xl:text-[1.875rem] 2xl:text-[2rem] text-white"
                     aria-current="page"
                   >
                     IES Youtubers
@@ -88,17 +91,17 @@
                 <div class="flex justify-center items-center ml-4">
                   <a
                     href="#"
-                    class="rounded-md px-3 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                    class="rounded-md px-3 py-2 text-base/8 sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-[1.075rem] text-gray-300 hover:bg-gray-700 hover:text-white"
                     >Área personal</a
                   >
                   <a
                     href="#"
-                    class="rounded-md px-3 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                    class="rounded-md px-3 py-2 text-base/8 sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-[1.075rem] text-gray-300 hover:bg-gray-700 hover:text-white"
                     >Mis cursos</a
                   >
                   <a
                     href="#"
-                    class="rounded-md px-3 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                    class="rounded-md px-3 py-2 text-base/8 sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-[1.075rem] text-gray-300 hover:bg-gray-700 hover:text-white"
                     >Calendario</a
                   >
                 </div>
@@ -130,7 +133,30 @@
                 />
               </svg>
             </button>
-
+            <button
+              type="button"
+              class="relative ml-3 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
+            >
+              <span class="absolute -inset-1.5"></span>
+              <span class="sr-only">Ver chat</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="size-6"
+              >
+                <path
+                  d="M3 3h18a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6l-4 4V5a2 2 0 0 1 2-2z"
+                />
+                <line x1="6" y1="9" x2="18" y2="9" />
+                <line x1="6" y1="12" x2="18" y2="12" />
+                <line x1="6" y1="15" x2="18" y2="15" />
+              </svg>
+            </button>
             <!-- Profile dropdown -->
             <div class="relative ml-3">
               <div>
@@ -168,7 +194,7 @@
               >
                 <!-- Active: "bg-gray-100 outline-hidden", Not Active: "" -->
                 <a
-                  href="#"
+                  href="./inicio.html"
                   class="block px-4 py-2 text-sm text-gray-700"
                   role="menuitem"
                   tabindex="-1"
@@ -176,7 +202,7 @@
                   >Tu perfil</a
                 >
                 <a
-                  href="#"
+                  href="./inicio.html"
                   class="block px-4 py-2 text-sm text-gray-700"
                   role="menuitem"
                   tabindex="-1"
@@ -184,7 +210,7 @@
                   >Ajustes</a
                 >
                 <a
-                  href="#"
+                  href="./login.html"
                   class="block px-4 py-2 text-sm text-gray-700"
                   role="menuitem"
                   tabindex="-1"
@@ -222,118 +248,123 @@
       </div>
     </nav>
     <!--End navbar-->
-    <!--Inicio-->
-    <div class="bg-color py-12 px-6">
-      <h1 class="text-xl font-bold dark:text-gray-100 text-gray-800 ml-4 pt-4">
+    <!--Cuerpo-->
+    <div class="bg-color py-8 px-6">
+      <h2
+        class="text-xl/8 md:text-xl lg:text-2xl xl:text-[1.5rem] 2xl:text-[1.75rem] text-black ml-4 pt-3"
+      >
         Mis cursos
-      </h1>
-      <h2 class="text-lg font-bold dark:text-gray-100 text-gray-800 ml-4 pb-4">
-        Vista general del curso
       </h2>
-      <div class="w-full m-auto rounded-lg flex justify-center items-center">
-        <div class="container mx-auto">
-          <div class="flex flex-wrap justify-center">
-            <!-- Carta 1 -->
-            <div class="w-full md:w-1/2 xl:w-1/2 px-4">
-              <div class="rounded-lg overflow-hidden mb-10 bg-light">
-                <img
-                  src="./img/tarjeta1.png"
-                  alt="image"
-                  class="w-full h-48 object-cover"
-                />
-                <div
-                  class="p-8 sm:p-9 md:p-7 xl:p-9 text-center flex flex-col flex-grow"
+      <h3
+        class="text-lg/7 md:text-lg lg:text-xl xl:text-[1.25rem] 2xl:text-[1.5rem] text-black ml-4 py-2"
+      >
+        Vista general del curso
+      </h3>
+      <!--Div de cartas-->
+      <div class="flex flex-wrap justify-center mt-4">
+        <!-- Carta 1 -->
+        <div class="w-full md:w-1/2 xl:w-1/2 px-4">
+          <div class="rounded-[2vw] overflow-hidden mb-10 bg-light">
+            <img
+              src="./img/tarjeta1.png"
+              alt="image1"
+              class="w-full h-48 object-cover"
+            />
+            <div
+              class="p-3 sm:p-4 md:p-4 xl:p-5 text-center flex flex-col flex-grow"
+            >
+              <h3>
+                <a
+                  href="./seccion1.html"
+                  class="block text-lg/7 md:text-lg lg:text-xl xl:text-[1.25rem] 2xl:text-[1.5rem] text-black"
                 >
-                  <h3>
-                    <a
-                      href=""
-                      class="font-bold text-dark block hover:text-primary sm:text-2xl"
-                    >
-                      Animación de Elementos 2D y 3D
-                    </a>
-                  </h3>
-                </div>
-              </div>
+                  Animación de Elementos 2D y 3D
+                </a>
+              </h3>
             </div>
-            <!-- Carta 2 -->
-            <div class="w-full md:w-1/2 xl:w-1/2 px-4">
-              <div class="rounded-lg overflow-hidden mb-10 bg-light">
-                <img
-                  src="https://cdn.tailgrids.com/1.0/assets/images/cards/card-01/image-02.jpg"
-                  alt="image"
-                  class="w-full h-48 object-cover"
-                />
-                <div
-                  class="p-8 sm:p-9 md:p-7 xl:p-9 text-center flex flex-col flex-grow"
+          </div>
+        </div>
+        <!-- Carta 2 -->
+        <div class="w-full md:w-1/2 xl:w-1/2 px-4">
+          <div class="rounded-[2vw] overflow-hidden mb-10 bg-light">
+            <img
+              src="./img/tarjeta2.png"
+              alt="image2"
+              class="w-full h-48 object-cover"
+            />
+            <div
+              class="p-3 sm:p-4 md:p-4 xl:p-5 text-center flex flex-col flex-grow"
+            >
+              <h3>
+                <a
+                  href="./seccion1.html"
+                  class="block text-lg/7 md:text-lg lg:text-xl xl:text-[1.25rem] 2xl:text-[1.5rem] text-black"
                 >
-                  <h3>
-                    <a
-                      href=""
-                      class="font-bold text-dark sm:text-2xl block hover:text-primary"
-                    >
-                      Diseño y Modelado para Animación
-                    </a>
-                  </h3>
-                </div>
-              </div>
+                  Diseño y Modelado para Animación
+                </a>
+              </h3>
             </div>
-            <!-- Carta 3 -->
-            <div class="w-full md:w-1/2 xl:w-1/2 px-4">
-              <div class="rounded-lg overflow-hidden mb-10 bg-light">
-                <img
-                  src="https://cdn.tailgrids.com/1.0/assets/images/cards/card-01/image-03.jpg"
-                  alt="image"
-                  class="w-full h-48 object-cover"
-                />
-                <div
-                  class="p-8 sm:p-9 md:p-7 xl:p-9 text-center flex flex-col flex-grow"
+          </div>
+        </div>
+        <!-- Carta 3 -->
+        <div class="w-full md:w-1/2 xl:w-1/2 px-4">
+          <div class="rounded-[2vw] overflow-hidden mb-10 bg-light">
+            <img
+              src="./img/tarjeta3.png"
+              alt="image3"
+              class="w-full h-48 object-cover"
+            />
+            <div
+              class="p-3 sm:p-4 md:p-4 xl:p-5 text-center flex flex-col flex-grow"
+            >
+              <h3>
+                <a
+                  href="./seccion1.html"
+                  class="block text-lg/7 md:text-lg lg:text-xl xl:text-[1.25rem] 2xl:text-[1.5rem] text-black"
                 >
-                  <h3>
-                    <a
-                      href=""
-                      class="font-bold text-dark sm:text-2xl block hover:text-primary"
-                    >
-                      Proyectos de Videojuegos y Entornos Interactivos
-                    </a>
-                  </h3>
-                </div>
-              </div>
+                  Proyectos de Videojuegos y Entornos Interactivos
+                </a>
+              </h3>
             </div>
-            <!-- Carta 4 -->
-            <div class="w-full md:w-1/2 xl:w-1/2 px-4">
-              <div class="rounded-lg overflow-hidden mb-10 bg-light">
-                <img
-                  src="https://cdn.tailgrids.com/1.0/assets/images/cards/card-01/image-03.jpg"
-                  alt="image"
-                  class="w-full h-48 object-cover"
-                />
-                <div
-                  class="p-8 sm:p-9 md:p-7 xl:p-9 text-center flex flex-col flex-grow"
+          </div>
+        </div>
+        <!-- Carta 4 -->
+        <div class="w-full md:w-1/2 xl:w-1/2 px-4">
+          <div class="rounded-[2vw] overflow-hidden mb-10 bg-light">
+            <img
+              src="./img/tarjeta4.png"
+              alt="image4"
+              class="w-full h-48 object-cover"
+            />
+            <div
+              class="p-3 sm:p-4 md:p-4 xl:p-5 text-center flex flex-col flex-grow"
+            >
+              <h3>
+                <a
+                  href="./seccion1.html"
+                  class="block text-lg/7 md:text-lg lg:text-xl xl:text-[1.25rem] 2xl:text-[1.5rem] text-black"
                 >
-                  <h3>
-                    <a
-                      href=""
-                      class="font-bold text-dark sm:text-2xl block hover:text-primary"
-                    >
-                      Realización del Montaje y Postproducción de Audiovisuales
-                    </a>
-                  </h3>
-                </div>
-              </div>
+                  Realización del Montaje y Postproducción de Audiovisuales
+                </a>
+              </h3>
             </div>
           </div>
         </div>
       </div>
+      <!--End div cartas-->
     </div>
-    <!--End inicio-->
-
+    <!--End cuerpo-->
     <!--Footer-->
     <footer class="bg-dark">
       <div class="w-full px-2 py-4 sm:px-6 lg:px-8">
         <div class="flex flex-col items-center justify-between sm:flex-row">
-          <p class="text-sm text-white dark:text-gray-300">
+          <p
+            class="text-base/8 sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-[1.075rem] text-white dark:text-gray-300 text-footer"
+          >
             Plataforma Educativa -
-            <a href="https://ayuda.educa.madrid.org/shelves/aula-virtual"
+            <a
+              href="https://ayuda.educa.madrid.org/shelves/aula-virtual"
+              class="text-base/8 sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-[1.075rem] underline decoration-solid"
               >Ayuda</a
             >
           </p>
@@ -342,6 +373,7 @@
               class="bg-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
               type="button"
             >
+              <i class="fa-solid fa-message-lines"></i>
               <i class="fab fa-twitter"></i></button
             ><button
               class="bg-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
