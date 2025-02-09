@@ -1,0 +1,7 @@
+.bg-teal-2 {
+  background-color: var(--color-teal);
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #008c95;
+  }
+}

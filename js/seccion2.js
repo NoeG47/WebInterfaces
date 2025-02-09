@@ -30,15 +30,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 //Funcion de marcar boton hecho
 function toggleEstado(button) {
-  if (button.classList.contains("bg-teal")) {
+  if (button.classList.contains("bg-teal-2")) {
     // Volver al estado inicial
-    button.classList.remove("bg-teal", "text-white");
+    button.classList.remove("bg-teal-2", "text-white");
     button.classList.add("bg-white");
     button.textContent = "Marcar como hecha";
   } else {
     // Cambiar a estado "Hecha"
     button.classList.remove("bg-white");
-    button.classList.add("bg-teal", "text-white");
+    button.classList.add("bg-teal-2", "text-white");
     button.textContent = "Hecha";
   }
 }
