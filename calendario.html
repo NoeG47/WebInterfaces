@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/output.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" href="./img/logo.png" type="image/gif" sizes="16x16" />
     <script
       src="https://kit.fontawesome.com/732cf83991.js"
       crossorigin="anonymous"
@@ -63,7 +64,7 @@
             </button>
           </div>
           <div
-            class="flex flex-1 h-full items-center ml-8 sm:ml-0 md:ml-0 lg:ml-0 sm:items-stretch sm:justify-start"
+            class="flex flex-1 h-full items-center ml-10 sm:ml-0 md:ml-0 lg:ml-0 sm:items-stretch sm:justify-start"
           >
             <div class="flex shrink-0 items-center">
               <img
@@ -227,19 +228,19 @@
         <div class="space-y-1 px-2 pt-2 pb-3">
           <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
           <a
-            href="#"
+            href="./inicio.html"
             class="block rounded-md px-3 py-2 text-base font-medium text-white"
             aria-current="page"
             >Área personal</a
           >
 
           <a
-            href="#"
+            href="./inicio.html"
             class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
             >Mis cursos</a
           >
           <a
-            href="#"
+            href="./calendario.html"
             class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
             >Calendario</a
           >
@@ -248,12 +249,15 @@
     </nav>
     <!--End navbar-->
     <!--Calendario-->
-    <div class="bg-color py-12 px-6 h-screen">
-      <h1 class="text-xl font-bold dark:text-gray-100 text-gray-800 ml-4 py-4">
+    <div class="bg-light-gray py-8 px-6">
+      <h2
+        class="text-xl/8 md:text-xl lg:text-2xl xl:text-[1.5rem] 2xl:text-[1.75rem] text-black ml-4 py-3"
+      >
         Calendario
-      </h1>
+      </h2>
+      <!--Cuerpo calendario-->
       <div
-        class="w-full m-auto rounded-lg flex justify-center items-center h-[80%]"
+        class="w-full m-auto rounded-lg flex justify-center items-center my-4"
       >
         <div class="p-10 bg-white dark:bg-gray-800 rounded-xl w-5/6 mx-auto">
           <div class="px-4 flex items-center justify-between mb-8">
@@ -691,6 +695,45 @@
               </tbody>
             </table>
           </div>
+        </div>
+      </div>
+      <!--End calendario-->
+      <h2
+        class="text-xl/8 md:text-xl lg:text-2xl xl:text-[1.5rem] 2xl:text-[1.75rem] text-black ml-4 py-3"
+      >
+        Conócenos
+      </h2>
+      <div
+        class="flex flex-col md:flex-row items-center md:items-start gap-6 mx-4"
+      >
+        <!-- Texto y botón -->
+        <div class="w-full md:w-1/2 text-center md:text-left">
+          <p
+            class="mx-4 pt-3 text-base md:text-lg lg:text-lg xl:text-[1.125rem] 2xl:text-[1.25rem] text-center"
+          >
+            ¿Tienes dudas o necesitas más información? Estamos aquí para
+            ayudarte. Haz clic en el siguiente enlace y completa el formulario
+            para que podamos ponernos en contacto contigo lo antes posible.
+          </p>
+          <div class="flex justify-center">
+            <a
+              class="bg-teal-500 text-white px-6 py-3 mt-4 inline-block rounded-lg shadow-md hover:bg-teal-600 transition text-base md:text-lg lg:text-lg xl:text-[1.125rem] 2xl:text-[1.25rem]"
+              href="./formulario.html"
+            >
+              Formulario de contacto
+            </a>
+          </div>
+        </div>
+        <!-- Iframe -->
+        <div class="w-full md:w-1/2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6075.165784685417!2d-3.6536834235977076!3d40.4180901555559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f599699f1ab%3A0x83554f35d5502a11!2sIES%20Francisco%20de%20Goya!5e0!3m2!1ses!2ses!4v1739103351774!5m2!1ses!2ses"
+            class="w-full h-64 md:h-80 lg:h-96 rounded-lg shadow-md"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </div>
