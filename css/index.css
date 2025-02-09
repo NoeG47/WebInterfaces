@@ -31,6 +31,10 @@
   background-color: var(--color-light-gray);
 }
 
+.border-dark {
+  border-color: var(--color-dark);
+}
+
 .bg-foto {
   background-image: url("../img/fondo.jpg");
   background-attachment: fixed;

@@ -978,6 +978,9 @@
   .w-48 {
     width: calc(var(--spacing) * 48);
   }
+  .w-\[50\%\] {
+    width: 50%;
+  }
   .w-auto {
     width: auto;
   }
@@ -1663,6 +1666,18 @@
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
+  }
+  .border-t-2 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 2px;
+  }
+  .border-t-4 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 4px;
+  }
+  .border-t-6 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 6px;
   }
   .border-r {
     border-right-style: var(--tw-border-style);
