@@ -1,0 +1,15 @@
+Técnicas de modelado de objetos
+
+El modelado de objetos en 3D es un proceso fundamental en la animación, los videojuegos y el diseño digital. Existen diversas técnicas utilizadas para dar forma y definir las estructuras de los modelos, entre las más comunes se encuentran:
+
+1. **Modelado por polígonos**: Uso de vértices, aristas y caras para definir la geometría de un objeto. Es la técnica más utilizada en animación y videojuegos debido a su eficiencia en renderizado.
+
+2. **Modelado por curvas (NURBS)**: Utiliza curvas matemáticas para definir superficies suaves y precisas, ideal para objetos industriales y diseño de automóviles.
+
+3. **Escultura digital**: Se trabaja el modelo como si fuera arcilla, permitiendo esculpir detalles orgánicos con herramientas avanzadas.
+
+4. **Modelado procedural**: Generación automática de modelos mediante algoritmos, común en entornos de gran escala como terrenos o ciudades.
+
+5. **Modelado por subdivisión**: Aplicación de subdivisiones en mallas de baja resolución para suavizar formas y mejorar la calidad del modelado.
+
+Cada una de estas técnicas se elige en función del tipo de proyecto y los requisitos de animación o renderizado. 

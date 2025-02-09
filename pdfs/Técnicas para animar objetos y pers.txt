@@ -1,0 +1,15 @@
+Técnicas para animar objetos y personajes en 3D mediante el uso de rigging y skinning
+
+La animación de personajes y objetos en 3D requiere procesos especializados para dotarlos de movimiento realista. Entre las principales técnicas utilizadas se encuentran:
+
+1. **Rigging**: Es el proceso de crear una estructura ósea o "esqueleto" dentro del modelo 3D. Consiste en la colocación de huesos y controladores que permiten manipular la geometría del personaje de manera eficiente.
+
+2. **Skinning**: Una vez creado el rig, se asigna la malla del modelo al esqueleto mediante pesos de influencia. Esto permite que los movimientos del esqueleto afecten correctamente la geometría del personaje.
+
+3. **Controladores y deformadores**: Se utilizan herramientas adicionales como *Inverse Kinematics (IK)* y *Forward Kinematics (FK)* para facilitar la animación. También se implementan deformadores como *Blend Shapes* para expresiones faciales.
+
+4. **Simulación de físicas**: En algunas animaciones, se aplican motores físicos para lograr movimientos más realistas, como el balanceo de ropa o cabello.
+
+5. **Animación por captura de movimiento (MoCap)**: Uso de sensores para registrar movimientos reales y transferirlos a personajes 3D, facilitando animaciones naturales.
+
+Estas técnicas permiten la creación de animaciones fluidas y realistas en videojuegos, películas y experiencias interactivas.

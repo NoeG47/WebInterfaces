@@ -43,14 +43,11 @@
   color: var(--color-teal);
 }
 
-label, button {
+label,
+button {
   font-family: "Madimi One", serif;
   font-weight: 400;
   font-style: normal;
-}
-
-.bg-dark {
-  color: var(--color-dark);
 }
 
 .bg-foto {
@@ -69,4 +66,6 @@ a,
   font-family: "Madimi One", serif;
   font-weight: 400;
   font-style: normal;
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */
