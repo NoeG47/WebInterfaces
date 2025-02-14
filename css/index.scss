@@ -4,19 +4,3 @@
 @import "calendario"; // Partial para estilos de botones
 @import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
 @import "formulario";
-.bg-foto {
-  background-image: url("../img/fondo.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-h1,
-h2,
-h3,
-a,
-.text-footer, .text-madimi {
-  font-family: "Madimi One", serif;
-  font-weight: 400;
-  font-style: normal;
-}
