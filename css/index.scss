@@ -1,6 +1,7 @@
-@import "colors";
-@import "login";
-@import "inicio";
-@import "calendario"; // Partial para estilos de botones
+@use "sass:meta";
+@use "colors";
+@use "login";
+@use "inicio";
+@use "calendario"; // Partial para estilos de botones
 @import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
-@import "formulario";
+@include meta.load-css("formulario");

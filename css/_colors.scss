@@ -1,19 +1,16 @@
-// mapa de colores
+// Mapa de colores (usando claves como strings)
 $colors: (
-  dark: #222831,
-  dark-gray: #393e46,
-  teal: #00adb5,
-  light-gray: #eeeeee,
-  light: #d9d9d9,
-  white: #ffffff,
+  "dark": #222831,
+  "dark-gray": #393e46,
+  "teal": #00adb5,
+  "light-gray": #eeeeee,
+  "light": #d9d9d9,
+  "white": #ffffff,
 );
 
-// generar las variables CSS dentro de :root usando map-get
+// Generar las variables CSS dentro de :root
 :root {
-  --color-dark: #{map-get($colors, dark)};
-  --color-dark-gray: #{map-get($colors, dark-gray)};
-  --color-teal: #{map-get($colors, teal)};
-  --color-light-gray: #{map-get($colors, light-gray)};
-  --color-light: #{map-get($colors, light)};
-  --color-white: #{map-get($colors, white)};
+  @each $name, $value in $colors {
+    --color-#{$name}: #{$value};
+  }
 }
