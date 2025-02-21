@@ -1,4 +1,4 @@
-// Obtener elementos
+// funcion para desplegar menu de la foto del usuario
 const userMenuButton = document.getElementById("user-menu-button");
 const userMenu = document.getElementById("user-menu");
 
@@ -12,6 +12,7 @@ userMenuButton.addEventListener("click", function () {
   }
 });
 
+//funcion para desplegar el menu hamburguesa
 document.getElementById("menu-toggle").addEventListener("click", function () {
   const menu = document.getElementById("mobile-menu");
   const openIcon = document.querySelector(".menu-icon-open");
